@@ -1,0 +1,5 @@
+# Ignore backup folder and system files
+backups/
+.DS_Store
+Thumbs.db
+node_modules/

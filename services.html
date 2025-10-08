@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StacklyBank - Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/bank logo.png">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="index.html" class="logo">
+        <img src="assets/bank logo.png" alt="StacklyBank logo" />
+
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li class="has-dropdown"><a href="index.html">Home</a>
+            <ul class="dropdown">
+              <li><a href="home1.html">Home 1</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#contact">Get Started</a>
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="services-hero">
+      <div class="services-content">
+        <h1>SERVICES&nbsp;</h1>
+      </div>
+    </section>
+
+
+    <!---Intro-->
+
+    <section class="services">
+      <div class="container">
+        <h1>Our Services</h1>
+        <p class="intro">
+          At StacklyBank, we provide secure, reliable, and smart banking solutions designed to make your financial
+          journey easier.
+          Whether you’re managing your savings, applying for a loan, or growing your business, our services are built to
+          help you achieve more.
+        </p>
+
+        <div class="services-grid">
+          <div class="services-card">
+            <i>💰</i>
+            <h3>Personal Banking</h3>
+            <p>Manage your money with ease — from savings accounts to instant fund transfers. Experience 24/7 access
+              with our secure online platform.</p>
+          </div>
+
+          <div class="services-card">
+            <i>🏢</i>
+            <h3>Business Banking</h3>
+            <p>Empower your business with flexible credit, fast transactions, and tools that simplify financial
+              management for growing enterprises.</p>
+          </div>
+
+          <div class="services-card">
+            <i>🎓</i>
+
+            <h3>Educational Loans</h3>
+            <p>At StacklyBank, we believe that financial limitations should never stand in the way of education. Our
+              educational loan services are designed to support students in achieving their academic goals.
+            </p>
+          </div>
+
+          <div class="services-card">
+            <i>📱</i>
+            <h3>Digital Banking</h3>
+            <p>Enjoy seamless banking from anywhere with our mobile app — instant payments, bill reminders, and spending
+              insights in one tap.</p>
+          </div>
+
+          <div class="services-card">
+            <i>🏠</i>
+            <h3> Home Loans</h3>
+            <p>At StacklyBank, we understand that owning a home is one of life’s biggest dreams. Our home loan services
+              are designed to make that dream come true with flexible repayment options, quick approvals, and
+              competitive interest rates.</p>
+          </div>
+
+          <div class="services-card">
+            <i>🚗</i>
+
+            <h3>Vehicle Loans</h3>
+            <p>At StacklyBank, we make owning your dream vehicle easier and faster with our flexible vehicle loan
+              options. Whether you’re buying a new car, a used vehicle, or a two-wheeler, our loans come with attractive
+              interest rates, quick approval, and minimal paperwork.</p>
+          </div>
+        </div>
+
+        <div class="why-choose">
+          <h2>Why Customers Trust StacklyBank</h2>
+          <ul>
+            <li>✅ 24/7 Customer Support</li>
+            <li>✅ Advanced Security Systems</li>
+            <li>✅ Fast & Transparent Service</li>
+            <li>✅ Over 1 Million Satisfied Customers</li>
+          </ul>
+        </div>
+
+        <div class="cta">
+          <h2>Ready to Experience Smarter Banking?</h2>
+          <p>Join StacklyBank today and take control of your financial future.</p>
+          <a href="#" class="cta-btn">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+ <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainNav = document.querySelector('.main-nav');
+
+    navToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
