@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  — Static banking website
 
 Files:
@@ -28,3 +29,6 @@ Next steps you might want:
 - Add real backend for contact submissions
 - Replace placeholder copy and images with real marketing content
 - Add more accessibility and tests
+=======
+# Bank
+>>>>>>> 14b9345a35851a24b522a08630c3dcb4972f3e60
