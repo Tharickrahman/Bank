@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>stacklyBank - Home 1</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./css/home1.css" />
   <link rel="icon" type="image/png" sizes="64x64" href="assets/bank logo.png">
 </head>
 
@@ -30,6 +31,7 @@
         </ul>
       </nav>
       <a class="cta" href="contact.html">Get Started</a>
+      
       <button class="nav-toggle" aria-label="Open navigation">☰</button>
     </div>
   </header>
@@ -40,7 +42,7 @@
         <div class="hero-text">
           <h1>Welcome to TrustBank — Featured Products</h1>
           <p>Explore tailored accounts and offers crafted for your financial success.</p>
-          <a class="btn" href="#offers">See Offers</a>
+          
         </div>
 
         <!-- right-side visual removed per request -->
@@ -48,11 +50,11 @@
     </section>
 
     <!-- Split image + text section -->
-    <section class="split-section container">
+    <section class="home-section container">
       <div class="split-image">
         <img src="assets/pic-1.png" alt="Bank specialist" />
       </div>
-      <div class="split-content">
+      <div class="index-content">
         <h2>Tailored business and personal offers</h2>
         <p class="lead">Products and services designed to support growth and financial wellbeing.</p>
         <ul class="points">
@@ -275,6 +277,14 @@
     navToggle.addEventListener('click', () => {
       mainNav.classList.toggle('active');
     });
+
+    const faqs = document.querySelectorAll('.faq');
+
+  faqs.forEach(faq => {
+    faq.addEventListener('click', () => {
+      faq.classList.toggle('active');
+    });
+  });
   </script>
 </body>
 

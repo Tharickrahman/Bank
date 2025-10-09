@@ -1,0 +1,418 @@
+html {
+    font-size: 18px;
+    /* ⬅️ increase this number to make everything larger */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 1.1rem;
+    /* ⬅️ this slightly enlarges all normal text */
+    line-height: 1.7;
+    color: #f5f8fa;
+    background-color: #071426;
+    /* dark background */
+}
+/* ============================
+   Hero Section - Alt
+============================ */
+.alt-hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: url('../assets/pic-9.webp') center/cover no-repeat;
+  color: #ffffff;
+  text-align: center;
+}
+
+.alt-hero .hero-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.alt-hero .hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.alt-hero .hero-text p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin-bottom: 2rem;
+  color:white;
+}
+
+.alt-hero .hero-text .btn {
+    background: var(--accent);
+    color: #04ec1c;
+    padding: 0.8rem 1.5rem;
+    border: box;
+    /* remove default border */
+    border-radius: 8px;
+    /* box-shaped button */
+    font-size: 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    /* optional: makes text all caps */
+    transition: background 0.3s ease;
+}
+
+.alt-hero .hero-text .btn:hover {
+  background-color: var(--accent-2);
+  transform: scale(1.05);
+}
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+  .alt-hero .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  .alt-hero .hero-text p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .alt-hero .hero-text h1 {
+    font-size: 2rem;
+  }
+  .alt-hero .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+/* image and content*/
+/* ============================
+   Split Section - Image Left, Content Right
+============================ */
+.home-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+;
+    /* Darker background */
+    padding: 2rem;
+    margin: 0;
+    /* remove extra top/bottom space */
+}
+
+.home-section .split-image img {
+    width: 300%;
+    object-fit: cover;
+}
+
+.home-section .index-content {
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 2%;
+    justify-content: center;
+    color: white;
+    /* lighter text for dark bg */
+}
+
+.home-section .index-content h2 {
+    font-size: 2.5rem;
+    /* bigger heading */
+    margin-bottom: 1rem;
+    color: #1384d0;
+}
+
+.home-section .index-content .lead {
+    font-size: 1.15rem;
+    /* slightly bigger paragraph */
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: #cfd8e3;
+}
+
+.home-section .index-content .points {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.home-section .index-content .points li {
+    font-size: 1.25rem;
+    background: rgba(255, 255, 255, 0.05);
+    /* subtle card-like feel */
+    padding: 0.8rem 1rem;
+    border-left: 4px solid var(--accent);
+    transition: all 0.3s ease;
+    border-radius: 0;
+    /* removed radius as requested */
+}
+
+.home-section .index-content .points li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(4px);
+}
+
+/* Responsive tweak */
+@media screen and (max-width: 900px) {
+    .home-section {
+        flex-direction: column;
+    }
+
+    .home-section .index-content {
+        padding-left: 0;
+        margin-top: 1.5rem;
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .home-section {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .home-section .index-content h2 {
+        font-size: 2rem;
+    }
+}
+
+/*animatio9n img*/
+.home-section .split-image img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.home-section .split-image img:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+/*testimonal*/
+
+/* ============================
+   Testimonials Section
+============================ */
+.testimonials {
+  padding: 5rem 2rem;
+  color: #fff;
+}
+
+.testimonials .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--text);
+}
+
+.testimonials .testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+}
+
+.testimonials .testimonial {
+  background: linear-gradient(135deg, #0b2340, #071426);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials .testimonial:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+.testimonials .testimonial-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1.2rem;
+}
+
+.testimonials h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.testimonials p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cfd8e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonials .section-title {
+    font-size: 2rem;
+  }
+
+  .testimonials .testimonial {
+    padding: 1.5rem;
+  }
+
+  .testimonials .testimonial-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonials h3 {
+    font-size: 1.3rem;
+  }
+
+  .testimonials p {
+    font-size: 0.95rem;
+  }
+}
+
+/* faq*/
+
+.faq-section {
+  padding: 4rem 0;
+  color: var(--text);
+  text-align: center;
+}
+
+.faq-section .section-title {
+  font-size: 2.5rem; /* increased */
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2063c6;
+}
+
+.faq-section .container p {
+  color: var(--muted);
+  font-size: 1.2rem; /* increased */
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* FAQ items */
+.faq {
+  background: #0b1b33;
+  margin: 1rem auto; /* center horizontally */
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  max-width: 1100px; /* slightly increased width */
+  text-align: center; /* center text */
+}
+
+.faq:hover {
+  background: #0e2a4f;
+  transform: translateY(-3px);
+}
+
+.faq-question {
+  font-size: 1.5rem; /* increased */
+  font-weight: 600;
+  color: var(--text);
+  position: relative;
+  padding-right: 25px;
+  text-align: center; /* center question text */
+}
+
+/* Plus/minus indicator */
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem; /* slightly bigger */
+  transition: transform 0.3s ease;
+}
+
+.faq.active .faq-question::after {
+  content: "-";
+  transform: translateY(-50%);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  font-size: 1.2rem; /* increased */
+  color: var(--text);
+  padding-top: 0;
+}
+
+.faq.active .faq-answer {
+  max-height: 500px;
+  padding-top: 0.8rem;
+}
+
+/* =========================
+   Map Section
+========================= */
+.map-section {
+  width: 100%;
+  padding: 4rem 2rem;
+  background: #0b1628; /* Dark background to match theme */
+  text-align: center;
+}
+
+.map-section h5 {
+  color: var(--accent);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.map-section h2 {
+  color: #2063c6;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.map-section .map-image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.map-section .map-image:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .map-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .map-section h2 {
+    font-size: 1.7rem;
+  }
+
+  .map-section {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .map-section h5 {
+    font-size: 0.85rem;
+  }
+}

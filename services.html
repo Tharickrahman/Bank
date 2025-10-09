@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>StacklyBank - Services</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/service.css" />
   <link rel="icon" type="image/png" sizes="64x64" href="assets/bank logo.png">
 </head>
 
@@ -101,29 +102,165 @@
               interest rates, quick approval, and minimal paperwork.</p>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="services-overview">
+      <div class="container">
+        <h2>Explore Our Expert Banking Services</h2>
+        <p>
+          At StacklyBank, we combine technology, security, and personalized support to offer financial solutions that
+          empower you to reach your goals. From personal banking to business solutions, our services are designed
+          with your success in mind.
+        </p>
 
-        <div class="why-choose">
-          <h2>Why Customers Trust StacklyBank</h2>
-          <ul>
-            <li>✅ 24/7 Customer Support</li>
-            <li>✅ Advanced Security Systems</li>
-            <li>✅ Fast & Transparent Service</li>
-            <li>✅ Over 1 Million Satisfied Customers</li>
-          </ul>
-        </div>
+        <div class="services-grid">
+          <!-- Personal Finance Solutions -->
+          <div class="service-card">
+            <h3>Smart Personal Banking</h3>
+            <p>
+              Streamlined accounts, instant transfers, and real-time insights help you manage your finances effortlessly
+              and make smarter decisions every day.
+            </p>
+          </div>
 
-        <div class="cta">
-          <h2>Ready to Experience Smarter Banking?</h2>
-          <p>Join StacklyBank today and take control of your financial future.</p>
-          <a href="#" class="cta-btn">Get Started</a>
+          <!-- Business Support -->
+          <div class="service-card">
+            <h3>Business Solutions</h3>
+            <p>
+              Flexible business accounts, credit options, and tailored financial tools allow you to grow your enterprise
+              efficiently while focusing on what matters most.
+            </p>
+          </div>
+
+          <!-- Loans & Financing -->
+          <div class="service-card">
+            <h3>Loans & Financing</h3>
+            <p>
+              Whether for education, home, or vehicles, our loan solutions offer competitive rates, fast approvals, and
+              flexible repayment options to fit your lifestyle.
+            </p>
+          </div>
+
+          <!-- Digital Experience -->
+          <div class="service-card">
+            <h3>Digital Banking</h3>
+            <p>
+              Manage your accounts, pay bills, and transfer funds securely through our intuitive mobile and web
+              platforms
+              anytime, anywhere.
+            </p>
+          </div>
+
+          <!-- Investment Guidance -->
+          <div class="service-card">
+            <h3>Investment Advisory</h3>
+            <p>
+              Receive personalized investment advice and portfolio management to grow your wealth while minimizing
+              risks.
+            </p>
+          </div>
+
+          <!-- Customer Support -->
+          <div class="service-card">
+            <h3>24/7 Customer Support</h3>
+            <p>
+              Our dedicated support team is available round-the-clock to answer queries, resolve issues, and provide
+              financial guidance whenever you need it.
+            </p>
+          </div>
         </div>
       </div>
     </section>
+    <section class="join-us">
+      <div class="container">
+        <h2>Ready to Partner with StacklyBank?</h2>
+        <p>Whether you’re looking for tailored financial solutions or want to grow your business with us, we’re here to
+          help. Join thousands of satisfied customers and experience banking like never before.</p>
+        <a href="contact.html" class="join-btn">Contact Us Today</a>
+      </div>
+    </section>
+
 
   </main>
+<footer class="footer">
+    <div class="footer-content">
+
+      <!-- 1. Company Overview -->
+      <div class="footer-section about">
+        <img src="assets/bank logo.png" alt="Bank Logo" class="footer-logo" />
+        <p>
+          Stackly is a next-generation digital banking platform providing secure, fast, and easy financial services.
+          We help individuals and businesses manage money with confidence and convenience.
+        </p>
+      </div>
+
+      <!-- 2. Navigation -->
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- 3. Services -->
+      <div class="footer-section service">
+        <h3>Our Services</h3>
+        <ul>
+          <li>Secure Money Transfers</li>
+          <li>Multi-Currency Accounts</li>
+          <li>Online Bill Payments</li>
+          <li>Mobile Banking App</li>
+          <li>Business Solutions</li>
+        </ul>
+      </div>
+
+      <!-- 4. Resources -->
+      <div class="footer-section resources">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Security Center</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- 5. Contact Info + Newsletter -->
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p><strong>Address:</strong> 123 Fintech Ave, Silicon Valley, CA</p>
+        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        <p><strong>Email:</strong> support@stackly.com</p>
+
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+          <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 6. Bottom Legal -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Stackly. All rights reserved. |
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms & Conditions</a>
+      </p>
+    </div>
+  </footer>
 
 
- <script>
+  <script>
     const navToggle = document.querySelector('.nav-toggle');
     const mainNav = document.querySelector('.main-nav');
 
